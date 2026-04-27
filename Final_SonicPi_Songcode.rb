@@ -1,11 +1,7 @@
-# Welcome to Sonic Pi
-use_bpm 120
-use_synth :blade
-note = 1
-
 car_engine = "C:/Users/kelly_atlas/Downloads/Car Engine Rev Sound Effect (HD).mp3"
 light = "C:/Users/kelly_atlas/Documents/Audacity/lightenunfg1.wav"
 party = "C:/Users/kelly_atlas/Documents/Audacity/party.wav"
+birds = "C:/Users/kelly_atlas/Documents/Audacity/Keha - TiK ToK (Official HD Video).wav"
 
 define :tok_1_3 do
   play :bb2
@@ -19,18 +15,18 @@ define :tok_1_3 do
   sleep 0.5
 end
 
-
 tok = [:c3, :c3, :d3, :d3, :d3]
 sleepTimes = [0.75,0.75, 1, 0.75, 0.75]
 t = 0   #index = t
 
-
-sample party
-sleep 5
-sample car_engine
-sleep 9
-
 2.times do
+  sample birds
+  sleep 8
+  sample party
+  sleep 5
+  sample car_engine
+  sleep 9
+  
   live_loop :tik do
     3.times do
       #4.5 beats
