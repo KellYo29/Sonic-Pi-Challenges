@@ -5,6 +5,7 @@ note = 1
 
 car_engine = "C:/Users/kelly_atlas/Downloads/Car Engine Rev Sound Effect (HD).mp3"
 light = "C:/Users/kelly_atlas/Documents/Audacity/lightenunfg1.wav"
+party = "C:/Users/kelly_atlas/Documents/Audacity/party.wav"
 
 define :tok_1_3 do
   play :bb2
@@ -23,6 +24,9 @@ tok = [:c3, :c3, :d3, :d3, :d3]
 sleepTimes = [0.75,0.75, 1, 0.75, 0.75]
 t = 0   #index = t
 
+
+sample party
+sleep 5
 sample car_engine
 sleep 9
 
@@ -113,7 +117,8 @@ msix = [:e5, :e4, :e4, :e4, :g4, :b4, :b4, :b4]
 s = 0   #index = s
 laugh = "C:/Users/kelly_atlas/Documents/Audacity/Actual_laugh.wav"
 remix ="C:/Users/kelly_atlas/Documents/Audacity/Remix.wav"
-ending = "C:/Users/kelly_atlas/Documents/Audacity/ending-1.wav"
+ending = "C:/Users/kelly_atlas/Documents/Audacity/fadeoutsong.wav"
+
 
 sample remix, amp: 2
 sleep 2
@@ -204,4 +209,4 @@ sleep 1
   sleep 0.3
   s = s + 1
 end
-sample ending
+sample ending, amp: 2
